@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npm install -g npm@10.9.1 && node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
+    "start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
     "lint": "next lint"
   },
   "keywords": [],
@@ -18,9 +18,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "serve": "^14.2.1"
-  },
-  "engines": {
-    "node": "16.x",
-    "npm": "10.9.1"
   }
 }
